@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: center;
+}
+p {
+    margin: 20px;
+}
+
