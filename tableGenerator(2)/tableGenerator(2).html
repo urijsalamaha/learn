@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table generator(2)</title>
+    <link rel="stylesheet" href="css/tableGenerator(2).css" />
+</head>
+<body>
+    <div class="sideBar">
+    <p>Enter quantity of columns:<br />
+    <input id = 'columns' type="number" min="1" max="10" value="1" /> 
+    </p>
+    <p>Enter quantity of lines: <br />
+    <input id = 'lines' type="number" min="1" max="10" value="1" />
+    </p>
+    <p>Enter thickness of borders:<br />
+     <input id = 'widthBorder' type="number" min="1" max="5" value="1" />   
+    </p>
+    <p>Enter the width of columns, px: <br />
+        <input id = 'widthColumns' type='number' min="10" max="100" value="10"/>
+    </p>
+    <p>Enter the height of lines, px: <br />
+        <input id = 'heigthLines' type="number" min="10" max="50" value="10"/>
+    </p>
+    <p>Enter color of background in format RGB:<br />
+    <input id = 'color' type="text" value=" " />
+    </p>
+    <p>Enter the defolt content
+        <textarea></textarea>
+    </p>
+    <input id="toFormTable" type="button" value="To form the table" />
+ </div>
+ <div class="content">
+
+ </div>
+ <script src="js/tableGenerator(2).js"></script>
+</body>
+</html>
