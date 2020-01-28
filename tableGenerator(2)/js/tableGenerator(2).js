@@ -7,10 +7,13 @@ document.querySelector("#toFormTable").addEventListener("click", function() {
   var widthBorder =
     document.querySelector("#widthBorder").value + "px" + " solid" + " black";
   var color = document.querySelector("#color").value;
-  var defoltMessege = document.querySelector("textarea").value;
+  var defaultMessege = document.querySelector("textarea").value;
+
+  // Do block cleaning
+  document.querySelector(".content").innerHTML = " ";
+
   // Insert the table
   var table = document.createElement("table");
-
   document.querySelector(".content").prepend(table);
   table.style.border = widthBorder;
 
@@ -23,7 +26,7 @@ document.querySelector("#toFormTable").addEventListener("click", function() {
     // Insert columns
     for (var count_2 = 0; count_2 < columns; ++count_2) {
       var td = document.createElement("td");
-      td.prepend(defoltMessege);
+      td.prepend(defaultMessege);
       td.style.width = widthColumns;
       td.style.backgroundColor = color;
       tr.prepend(td);

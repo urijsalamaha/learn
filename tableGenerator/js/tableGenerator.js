@@ -41,7 +41,11 @@ document.querySelector("#toFormTable").addEventListener("click", function() {
   parTable["heightTr"] = input[4].value;
   parTable["color"] = input[5].value;
 
+  // Do block cleaning
+  cont.innerHTML = ' ';
+
   var table = document.createElement("table");
+
   // Put the table in DOM
   cont.prepend(table);
   table.style.borderWidth = parTable.border + "px";
