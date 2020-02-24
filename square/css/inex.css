@@ -1,0 +1,74 @@
+.bd {
+  width: 1366px;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #96180f;
+}
+.mainSquare {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  background-color: #fae3e1;
+  border-radius: 0.5rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5em;
+}
+.square {
+  width: 300px;
+  height: 300px;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5b3b3;
+}
+
+button {
+  width: 117px;
+  height: 46px;
+  background-color: #fac000;
+  border: none;
+  box-shadow: 7px 7px 5px;
+  border-radius: 0.5rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  transition-property: transform, bacground-color, color, opacity, visibility;
+  transition-duration: 300ms, 200ms, 200ms, 1000ms;
+  transition-delay: 0ms, 0ms, 0ms, 200ms, 1200ms;
+}
+
+/*Style button during event of mouse*/
+.overButton {
+  background-color: #190a6e;
+  color: white;
+}
+.downButton {
+  transform: scale(0.8);
+  background-color: #190a6e;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.setting {
+  margin-top: 20px;
+}
+.setting input {
+  margin-top: 20px;
+  width: 200px;
+  height: 24px;
+}
+.smallSquare {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: indianred;
+}
+.square div{
+  font-size: 1.5em;
+  color: #f20c0c;
+}
